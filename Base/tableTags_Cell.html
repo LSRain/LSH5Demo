@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table标签-合并单元格</title>
+</head>
+<body>
+
+<table bgcolor="black" cellspacing="1px" width="500px" height="300px" align="center">
+    <caption>合并第二行的3个单元格(水平)</caption>
+    <tr bgcolor="white">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr bgcolor="white">
+        <td colspan="3"></td>
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<br>
+<table bgcolor="black" cellspacing="1px" width="500px" height="300px" align="center">
+    <caption>合并第二列的4个单元格(垂直)</caption>
+    <tr bgcolor="white">
+        <td></td>
+        <td rowspan="4"></td>
+        <td></td>
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+        <td></td>
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+        <td></td>
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<br>
+<table bgcolor="black" cellspacing="1px" width="500px" height="300px" align="center">
+    <caption>合并第二行的2个单元格(水平)+第三行的2个单元格(垂直)</caption>
+    <tr bgcolor="white">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr bgcolor="white">
+        <td colspan="2"></td>
+        <td></td>
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+        <td rowspan="2"></td>
+        <td></td>
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<br>
+<table bgcolor="black" cellspacing="1px" width="500px" height="300px" align="center">
+    <caption>合并第二行的2个单元格(水平)+第第二行二列的两个单元格(垂直)</caption>
+    <tr bgcolor="white">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+        <td colspan="2" rowspan="2"></td>
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+</body>
+</html>
