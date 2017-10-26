@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cssSelector1</title>
+    <style>
+        /*<!--标签选择器-->*/
+        /*
+        p{
+            color: red;
+        }
+        */
+        /*id选择器*/
+        #identify1{
+            color: yellow;
+        }
+        /*类选择器*/
+        .classStyle1{
+            color: blue;
+        }
+        .classStyle2{
+            font-size:50px;
+        }
+        /*后代选择器*/
+        div ul li h3{
+            color: purple;
+        }
+        /*子元素选择器*/
+        .identityDiv>h3{
+            text-align: center;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<p>p标签选择器示例</p>
+<p id="identify1">id选择器#示例内容1</p>
+<p id="identify2">id选择器#示例内容2</p>
+
+<hr>
+<p class="classStyle1 classStyle2">类选择器.示例内容1</p>
+<p class="classStyle1">类选择器.示例内容2</p>
+
+<hr>
+<div class="identityDiv">
+    <h3>特异性区别示例(子元素选择器修饰)h3</h3>
+    <h3>特异性区别示例(子元素选择器修饰)h3</h3>
+    <ul>
+        <li>
+            <h3>后代选择器示例1</h3>
+            <h3>后代选择器示例2</h3>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
