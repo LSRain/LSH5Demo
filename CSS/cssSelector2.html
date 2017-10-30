@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cssSelector2</title>
+    <style>
+        /*
+        交集选择器-标签选择和类选择器和id选择器的交集
+        */
+        /*
+        p.para1#identity{
+            color: blue;
+        }
+        */
+        /*并集选择器-class选择器ht和para1的并集*/
+        /*
+        .ht,.para1{
+            color: red;
+        }
+        */
+        /*相邻兄弟选择器*/
+        /*
+        h2+p{
+            color: red;
+        }
+        */
+        /*通用兄弟选择器*/
+        a~p{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<h2>h2标题内日</h2>
+<a href="https://www.baidu.com">百度超链接</a>
+<p>段落内容1</p>
+<h3 class="ht">标题内容</h3>
+<p class="para1" id="identity">段落内容2</p>
+<p class="para1">段落内容3</p>
+</body>
+</html>
