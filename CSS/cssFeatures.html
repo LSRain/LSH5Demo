@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS的三大特性</title>
+    <style>
+        /*----继承性-----*/
+        /*
+        body{
+            color: red;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        */
+        /*----层叠性-----*/
+        /*
+        #identity{
+            color: red;
+        }
+        .elementP{
+            color: blue;
+        }
+        */
+        /*----优先级-----*/
+        #identity{
+            color: purple;
+            font-size: 50px;
+        }
+        .elementP{
+            color: pink ;
+        }
+        p{
+            color: green;
+        }
+        *{  /*通配符选择器*/
+            color: blue !important;
+            font-size:10px;
+        }
+        li{
+            color: red ;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <p>段落内容</p>
+</div>
+
+<div>
+    <ul>
+        <li>
+            <p id="identity" class="elementP">li中的段落内容</p>
+        </li>
+    </ul>
+</div>
+
+<div>
+    <a href="#">超链接</a>
+</div>
+
+<div>
+    <h2>h2标题</h2>
+</div>
+</body>
+</html>
