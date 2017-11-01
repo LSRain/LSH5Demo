@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS的元素显示模式和背景设置</title>
+    <style>
+        /*CSS元素显示模式的转换 - display*/
+        /*
+        div{
+            display: inline;
+            background: red;
+            width: 200px;
+            height: 200px;
+        }
+        */
+        span{
+            display: block;
+            background: green;
+            width: 200px;
+            height: 200px;
+        }
+        .cc{
+            background: blue;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+
+        div{
+            width: 500px;
+            height: 500px;
+        }
+        .box{
+            background-color: red;
+        }
+
+        /*-----背景图片------*/
+        .boxBG{
+            /*
+            background-color: red;
+            background-image: url(images/bg_fg.jpg);
+            /*背景图片平铺方式-垂直
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-position: left top;
+            */
+            /*缩写方式*/
+            background: red url(images/bg_fg.jpg) no-repeat fixed left top;
+        }
+
+    </style>
+</head>
+<body>
+<div class="boxBG"></div>
+<div>div1内容</div>
+<div>div2内容</div>
+<span>span1内容</span>
+<span>span2内容</span>
+<p class="cc">段落p内容</p>
+<strong class="cc">加粗内容</strong>
+<div class="box"></div>
+</body>
+</html>
