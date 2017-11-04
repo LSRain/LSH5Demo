@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框示例</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            /*边框设置连写方式 - 所有边框(top right bottom left)均使用同一种设置: 5px 实线 黑色*/
+            border: 5px solid black;
+        }
+        .box2{
+            /* 根据元素设置 */
+            border-width:5px;
+            border-style:solid;
+            border-color: red green blue purple;
+        }
+
+        .box3{
+            /* 先统一设置所有边框, 再单独设置右边的边框 */
+            border: 5px solid red;
+            border-right:5px dashed red; /*CSS的层叠性*/
+        }
+        .box4{
+            /* 先统一设置所有边框, 再单独设置不同的边框样式 */
+            border: 5px solid red;
+            border-style:solid dashed solid dashed;
+        }
+        .box5{
+            border: 5px solid black;
+            border-bottom: none; /*不需要边框*/
+        }
+        .box6{
+            /* 根据边框绘制`倒三角`图形 */
+            width: 0px;
+            height: 0px;
+            border-width:50px;
+            border-style:solid;
+            border-color: red white blue white;
+            border-bottom:none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box1"></div>
+<hr>
+<div class="box2"></div>
+<hr>
+<div class="box3"></div>
+<hr>
+<div class="box4"></div>
+<hr>
+<div class="box5"></div>
+<hr>
+<div class="box6"></div>
+
+</body>
+</html>
